@@ -1,7 +1,8 @@
-# MacBook Configuration for Terraform and Ansible
-This repository provides an easier way to set up your MacBook with all the necessary packages for deployments using Terraform and Ansible. 
+# MacBook Configuration
+This repository provides an easier way to set up your MacBook with all the necessary packages for deployments using Terraform and Ansible and other things like podman.
+The provided script will install all the packages listed in the Brewfile, ensuring you have the essential tools for effective and efficient deployments. 
 
-The provided script will install all the packages listed in the Brewfile, ensuring you have the essential tools for effective and efficient deployments.
+💡 Note that this Brewfile mirrors the setup of my MacBook, hence it includes additional programs as well. If you don't need one of the following packages, just edit the Brew File as explained below. 
 
 ## Packages Installed
 
