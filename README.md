@@ -43,14 +43,7 @@ git clone https://github.com/yahikii/macbook-config.git
 cd macbook-config
 ````
 
-Ensure the setup script is executable:
-
+Install the Brewfile 
 ````shell
-chmod +x setup.sh
-````
-
-Run the setup script:
-
-````shell
-./setup.sh
+brew bundle --file=./Brewfile
 ````
