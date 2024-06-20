@@ -42,3 +42,8 @@ vscode "redhat.vscode-yaml"
 
 # VSCode Themes
 vscode "catppuccin.catppuccin-vsc"
+
+# Install ansible and additional packages
+post_install() {
+  ./pipx_setup.sh
+}
