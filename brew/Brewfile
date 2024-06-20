@@ -7,6 +7,8 @@ tap "homebrew/core"
 brew "mas"
 brew "cask"
 
+# Basic installation
+brew "fish"
 
 # Deployment apps
 brew "mage"
