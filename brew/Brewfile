@@ -1,7 +1,14 @@
+# Homebrew basics
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "buo/cask-upgrade"
+tap "homebrew/cask-fonts"
 tap "homebrew/core"
-brew "direnv"
+brew "mas"
+brew "cask"
+
+
+# Deployment apps
 brew "mage"
 brew "opentofu"
 brew "pipx"
@@ -9,10 +16,19 @@ brew "podman"
 brew "podman-compose"
 brew "terraform"
 brew "vault"
+
+# Deployment nice to have things
+brew "direnv"
+
+# Others
 cask "powershell"
+cask "vscode"
+cask "gimp"
+cask "spotify"
 cask "warp"
 cask "zed"
-tap "buo/cask-upgrade"
+
+# VSCode Add-Ins
 vscode "hashicorp.terraform"
 vscode "kennylong.kubernetes-yaml-formatter"
 vscode "ms-python.debugpy"
@@ -21,3 +37,6 @@ vscode "ms-python.vscode-pylance"
 vscode "ms-vscode.powershell"
 vscode "redhat.ansible"
 vscode "redhat.vscode-yaml"
+
+# VSCode Themes
+vscode "catppuccin.catppuccin-vsc"
