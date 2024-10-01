@@ -17,26 +17,37 @@ brew "pipx"
 brew "podman"
 brew "podman-compose"
 brew "terraform"
+brew "tflint"
 brew "vault"
+brew "azure-cli"
+brew "docker"
+
+## Kubernetes
+brew "helm"
+brew "kind"
+brew "kubernetes-cli"
 
 # Deployment nice to have things
 brew "direnv"
+brew "k9s"
+brew "terminal-notifier"
 
 # Others
 cask "powershell"
 cask "vscode"
 cask "gimp"
 cask "spotify"
-cask "warp"
 cask "zed"
 
 # VSCode Add-Ins
 vscode "hashicorp.terraform"
+vscode "golang.go"
 vscode "kennylong.kubernetes-yaml-formatter"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
 vscode "ms-vscode.powershell"
+vscode "pspester.pester-test"
 vscode "redhat.ansible"
 vscode "redhat.vscode-yaml"
 
@@ -47,3 +58,4 @@ vscode "catppuccin.catppuccin-vsc"
 post_install() {
   ./pipx_setup.sh
 }
+
