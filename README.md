@@ -12,13 +12,20 @@ The following tools will be installed on your system:
 - mage
 - opentofu
 - pipx
+- docker
 - podman
 - podman-compose
 - terraform
+- tflint
 - vault
 - powershell
-- warp
 - zed
+- azure-cli
+### Kubernetes related
+- helm
+- kind
+- kubernetes-cli
+- k9s
 
 ### Python Packages for Ansible
 
