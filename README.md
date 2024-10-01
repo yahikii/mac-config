@@ -12,13 +12,20 @@ The following tools will be installed on your system:
 - mage
 - opentofu
 - pipx
+- docker
 - podman
 - podman-compose
 - terraform
+- tflint
 - vault
 - powershell
-- warp
 - zed
+- azure-cli
+### Kubernetes related
+- helm
+- kind
+- kubernetes-cli
+- k9s
 
 ### Python Packages for Ansible
 
@@ -43,14 +50,7 @@ git clone https://github.com/yahikii/macbook-config.git
 cd macbook-config
 ````
 
-Ensure the setup script is executable:
-
+Install the Brewfile 
 ````shell
-chmod +x setup.sh
-````
-
-Run the setup script:
-
-````shell
-./setup.sh
+brew bundle --file=./Brewfile
 ````
