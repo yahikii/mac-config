@@ -6,7 +6,7 @@ Additionally, it includes dotfiles for a highly customized terminal and shell ex
 
 The provided script will automatically install all packages listed in the Brewfile, ensuring your system is equipped with the necessary tools for efficient deployments.
 
-💡 Note: This Brewfile reflects my personal MacBook setup and includes additional software. If certain packages aren't needed, feel free to edit the Brewfile as explained in the [Brew Config documentation.](/mac-config/brew-config.md)
+💡 Note: This Brewfile reflects my personal MacBook setup and includes additional software. If certain packages aren't needed, feel free to edit the Brewfile as explained in the [Brew Config documentation.](/brew-config.md)
 
 ## Terminal customization
 
@@ -70,7 +70,7 @@ The following Python packages will be injected to the python environment for ans
 </details>
 
 ### Customizing the Brew File
-For more informations, see [Brew Config documentation](/mac-config/brew-config.md).
+For more informations, see [Brew Config documentation](/brew-config.md).
 
 ## Getting Started
 Clone the repository:
