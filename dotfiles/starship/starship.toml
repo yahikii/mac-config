@@ -1,0 +1,86 @@
+format = """
+$username$hostname$directory\
+$git_branch\
+$golang\
+$terraform\
+${custom.opentofu}\
+$rust\
+$python\
+${custom.ansible}\
+$line_break\
+$character
+"""
+
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+# Set the timeout for command execution
+command_timeout=2000
+
+# User + hostname + directory
+[username]
+format='[$user]($style)'
+show_always = true
+disabled = true
+
+[hostname]
+ssh_only = false
+format = '[@$hostname](cyan)'
+disabled = true
+
+[directory]
+style = 'fg:#87dde5 bold'
+format = '[˚*･༓☾ $path ☽༓･*˚]($style) '
+
+# Version control system
+[git_branch]
+symbol = ' '
+style = 'purple'
+format = 'on [$symbol]($style) [$branch]($style bold) '
+
+# Languages
+[golang]
+symbol = ''
+style = 'fg:#00ADD8'
+format = 'via [$symbol]($style) [$version]($style bold) '
+
+[python]
+symbol = ''
+style = 'yellow'
+format = 'via [$symbol]($style) [$version]($style bold) '
+
+[rust]
+symbol = ''
+style = 'fg:#ce4b0a'
+format = 'via [$symbol]($style) [$version]($style bold) '
+
+[terraform]
+symbol = '󱁢'
+style = 'fg:#7B42BC'
+detect_extensions = []
+format = 'via [$symbol]($style) [$version]($style bold) '
+
+[custom.opentofu]
+symbol = ''
+description = 'OpenTofu version'
+style = 'fg:#fce307'
+format = 'via [$symbol]($style) [$output]($style bold) '
+detect_folders = ['.tofu']
+shell = '/bin/bash'
+command = 'echo -n $(tofu version 2>/dev/null | grep OpenTofu | grep -oP "v\K[0-9.]+")'
+
+[custom.ansible]
+symbol = '󱂚'
+description = 'Ansible Core version'
+detect_files = ['ansible.cfg']
+style = 'red'
+format = 'via [$symbol]($style) [$output]($style bold) '
+shell = '/bin/bash'
+command = 'echo -n $(ansible --version 2>/dev/null | grep -oP "(?<=core )[\d\.]+")'

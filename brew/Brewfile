@@ -1,8 +1,8 @@
 # Homebrew basics
 tap "homebrew/bundle"
+tap "hashicorp/tap"
 tap "homebrew/cask"
 tap "buo/cask-upgrade"
-tap "homebrew/cask-fonts"
 tap "homebrew/core"
 brew "mas"
 brew "cask"
@@ -16,23 +16,35 @@ brew "opentofu"
 brew "pipx"
 brew "podman"
 brew "podman-compose"
-brew "terraform"
-brew "tflint"
+brew "hashicorp/tap/terraform"
 brew "vault"
 brew "azure-cli"
 brew "docker"
+brew "go"
 
 ## Kubernetes
 brew "helm"
 brew "kind"
 brew "kubernetes-cli"
+brew "kustomize"
+brew "velero"
 
 # Deployment nice to have things
 brew "direnv"
 brew "k9s"
 brew "terminal-notifier"
+brew "cookiecutter"
+brew "robusta-dev/krr/krr"
+
+# Terminal nice to have
+brew "eza"
+brew "fzf"
+brew "tflint"
+brew "checkov"
+brew "zoxide"
 
 # Others
+cask "wezterm"
 cask "powershell"
 cask "vscode"
 cask "gimp"
@@ -40,16 +52,16 @@ cask "spotify"
 cask "zed"
 
 # VSCode Add-Ins
-vscode "hashicorp.terraform"
 vscode "golang.go"
+vscode "hashicorp.terraform"
 vscode "kennylong.kubernetes-yaml-formatter"
+vscode "mervin.markdown-formatter"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
 vscode "ms-vscode.powershell"
 vscode "pspester.pester-test"
 vscode "redhat.ansible"
-vscode "redhat.vscode-yaml"
 
 # VSCode Themes
 vscode "catppuccin.catppuccin-vsc"
