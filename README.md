@@ -32,7 +32,7 @@ Icons are managed with Starship. To display them correctly, install a [Nerdfont]
 ## Brew packages installed
 
 The following tools will be installed on your system, when running the brew file/script:
-<details open>
+<details closed>
 <summary> General </summary>
 
     - direnv
@@ -49,7 +49,7 @@ The following tools will be installed on your system, when running the brew file
     - azure-cli
 </details>
 
-<details open>
+<details closed>
 <summary> Kubernetes related </summary>
 
     - helm
@@ -61,7 +61,7 @@ The following tools will be installed on your system, when running the brew file
 ### Python Packages for Ansible
 
 The following Python packages will be injected to the python environment for ansible:
-<details open>
+<details closes>
 
     - hvac
     - requests
