@@ -1,0 +1,43 @@
+{
+    "workbench.colorTheme": "Rosé Pine Moon",
+    "git.autofetch": true,
+    "explorer.confirmDelete": false,
+    "git.confirmSync": false,
+    "files.autoGuessEncoding": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "powershell.pester.codeLens": false,
+    "explorer.confirmDragAndDrop": false,
+    "yaml.customTags": [
+        "!reference sequence"
+    ],
+    "ansible.validation.lint.enabled": false,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "workbench.colorCustomizations": {
+        "[Rosé Pine *]": {
+            "editorBracketHighlight.foreground1": "#e34a75cc",
+            "editorBracketHighlight.foreground2": "#268ab2cc",
+            "editorBracketHighlight.foreground3": "#9d77f6cc",
+            "editorBracketHighlight.foreground4": "#9ccfd8cc",
+            "editorBracketHighlight.foreground5": "#caebbacc",
+            "editorBracketHighlight.foreground6": "#b78ee9cc",
+        },
+    },
+    "editor.tokenColorCustomizations": {
+        "[Rosé Pine Moon]": {
+            "textMateRules": [
+                {
+                    // Change string color
+                    "scope": [
+                        "string",
+                        "punctuation.definition.string.begin",
+                        "punctuation.definition.string.end"
+                    ],
+                    "settings": {
+                        "foreground": "#c4a7e7",
+                    }
+                }
+            ]
+        }
+    }
+}

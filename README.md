@@ -12,9 +12,9 @@ The provided script will automatically install all packages listed in the Brewfi
 
 * Terminal: Wezterm 🖥️
 * Shell: Fish 🐠
-* Theme: Rosè Pine 🥀
+* Theme: Rosè Pine (Custom) 🥀
 
-Icons are managed with Starship. To display them correctly, install a [Nerdfont](https://www.nerdfonts.com/).
+Icons are managed with Starship. To display them correctly, install a [Nerdfont](https://www.nerdfonts.com/). The theme has been customized. To use the custom theme, simply copy the lines starting from line 16 in the vscode `settings.json` file.
 
 ### Dot File Placements
 
@@ -23,7 +23,10 @@ Icons are managed with Starship. To display them correctly, install a [Nerdfont]
 | wezterm | Terminal | ~/.wezterm.lua | https://wezfurlong.org/wezterm/installation.html |
 | fish | Shell| ~/.config/fish/config.fish | https://fishshell.com/ |
 | starship | Shell prompt| ~/.config/starship.toml | https://starship.rs/guide/ |
-| k9s | Kubernetes management TerminalUI |tbd|tbd|
+| vscode | code editor | - | https://code.visualstudio.com/docs/getstarted/themes|
+| k9s | Kubernetes management Terminal UI |~/Library/Application Support/k9s/skins|https://github.com/sasoria/k9s-theme|
+
+💡 To change the k9s theme, you have to edit the `config.yaml` in the k9s config folder.
 
 #### Custom Theme Preview:
 
@@ -70,17 +73,23 @@ The following Python packages will be injected to the python environment for ans
 </details>
 
 ### Customizing the Brew File
+
 For more informations, see [Brew Config documentation](/brew-config.md).
 
 ## Getting Started
+
 Clone the repository:
 
-````shell
+`
+
+```shell
 git clone https://github.com/yahikii/macbook-config.git
 cd macbook-config
 ````
 
 Install the Brewfile 
-````shell
+`
+
+```shell
 brew bundle --file=./Brewfile
 ````
