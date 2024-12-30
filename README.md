@@ -21,6 +21,7 @@ Icons are managed with Starship. To display them correctly, install a [Nerdfont]
 | Name | Description |  Configlocation | Website |
 | ---- | ----------- |  ----------- | ------- |
 | wezterm | Terminal | ~/.wezterm.lua | https://wezfurlong.org/wezterm/installation.html |
+| ghostty | Terminal | ~/.config/ghostty/config | https://ghostty.org/docs |
 | fish | Shell| ~/.config/fish/config.fish | https://fishshell.com/ |
 | starship | Shell prompt| ~/.config/starship.toml | https://starship.rs/guide/ |
 | vscode | code editor | - | https://code.visualstudio.com/docs/getstarted/themes|

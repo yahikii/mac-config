@@ -1,0 +1,12 @@
+# Theme
+theme = rose-pine
+background-opacity = 0.95
+background = #150d29
+cursor-invert-fg-bg = true
+cursor-style = block
+shell-integration-features = no-cursor
+
+# Disable ligatures
+font-feature = -calt
+font-feature = -liga
+font-feature = -dlig
