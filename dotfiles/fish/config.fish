@@ -12,6 +12,8 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 set -x HOMEBREW_NO_INSTALL_FROM_API "1"
 
+set -x STARSHIP_CONFIG ~/.config/.starship/starship.toml
+
 # set -g direnv_fish_mode eval_on_arrow
 
 # Start ssh-agent if it is not already running
@@ -44,3 +46,7 @@ if test -f (brew --prefix)/etc/brew-wrap
    end
 end
 
+# Show last folders in full name in title bar
+function fish_title
+   prompt_pwd --full-length-dirs=2 --dir-length=1
+end
