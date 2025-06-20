@@ -1,10 +1,15 @@
 # Theme
+# theme = iceberg-dark
 theme = rose-pine
-background-opacity = 0.95
+background-opacity = 0.85
 background = #150d29
+selection-background = #322669
+selection-invert-fg-bg = false
 cursor-invert-fg-bg = true
 cursor-style = block
 shell-integration-features = no-cursor
+background-blur-radius = 15
+title=""
 
 # Disable ligatures
 font-feature = -calt

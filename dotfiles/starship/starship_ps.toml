@@ -1,0 +1,28 @@
+format = """
+$shell\
+$username$hostname$directory\
+$line_break$character\
+"""
+
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = false
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+# Set the timeout for command execution
+command_timeout=2000
+
+[directory]
+style = '#3fa9eb bold'
+format = '[˚*･༓☾ $path ☽༓･*˚]($style) '
+
+# Languages
+[shell]
+powershell_indicator = "󰨊"
+style = '#3fa9eb bold'
+disabled = false 
