@@ -4,8 +4,10 @@ tap "hashicorp/tap"
 tap "homebrew/cask"
 tap "buo/cask-upgrade"
 tap "homebrew/core"
+tap "robusta-dev/krr"
 brew "mas"
 brew "cask"
+
 
 # Basic installation
 brew "fish"
@@ -62,6 +64,7 @@ vscode "ms-python.vscode-pylance"
 vscode "ms-vscode.powershell"
 vscode "pspester.pester-test"
 vscode "redhat.ansible"
+vscode "foxundermoon.shell-format"
 
 # VSCode Themes
 vscode "catppuccin.catppuccin-vsc"
@@ -70,4 +73,3 @@ vscode "catppuccin.catppuccin-vsc"
 post_install() {
   ./pipx_setup.sh
 }
-

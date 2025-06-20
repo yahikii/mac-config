@@ -1,5 +1,5 @@
 if status is-interactive
-	fish_add_path /Users/yhinel/.local/bin
+	fish_add_path /Users/XXXXXX/.local/bin
 #	alias docker="podman"
 	alias pip="pipx"
 	alias ll="eza -la"
@@ -22,8 +22,8 @@ set -x STARSHIP_CONFIG ~/.config/.starship/starship.toml
 # end
 
 # Add the SSH key to the agent
-ssh-add ~/.ssh/gitlab_yhinel
-ssh-add ~/.ssh/github_yahikii
+ssh-add ~/.ssh/gitlab_
+ssh-add ~/.ssh/github_
 
 # Source
 direnv hook fish | source
