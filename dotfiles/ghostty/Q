@@ -1,0 +1,8 @@
+# theme = iceberg-dark
+theme = rose-pine
+background-opacity = 0.99
+background = #131021
+
+font-feature = -calt
+font-feature = -liga
+font-feature = -dlig
