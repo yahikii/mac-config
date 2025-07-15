@@ -12,3 +12,4 @@ pipx inject ansible requests
 pipx inject ansible pyvmomi
 pipx inject ansible pywinrm
 pipx inject ansible ansible-lint
+pipx inject ansible jmespath
