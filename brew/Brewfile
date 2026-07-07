@@ -1,9 +1,6 @@
 # Homebrew basics
-tap "homebrew/bundle"
 tap "hashicorp/tap"
-tap "homebrew/cask"
 tap "buo/cask-upgrade"
-tap "homebrew/core"
 tap "robusta-dev/krr"
 brew "mas"
 brew "cask"
@@ -13,63 +10,41 @@ brew "cask"
 brew "fish"
 
 # Deployment apps
-brew "mage"
-brew "opentofu"
+#brew "mage"
 brew "pipx"
-brew "podman"
-brew "podman-compose"
 brew "hashicorp/tap/terraform"
-brew "vault"
-brew "azure-cli"
 brew "docker"
-brew "go"
+#brew "podman"
 
 ## Kubernetes
 brew "helm"
 brew "kind"
-brew "kubernetes-cli"
 brew "kustomize"
-brew "velero"
 
 # Deployment nice to have things
 brew "direnv"
 brew "k9s"
-brew "terminal-notifier"
-brew "cookiecutter"
 brew "robusta-dev/krr/krr"
 
 # Terminal nice to have
 brew "eza"
 brew "fzf"
-brew "tflint"
 brew "checkov"
 brew "zoxide"
 
 # Others
-cask "wezterm"
-cask "powershell"
-cask "vscode"
-cask "gimp"
-cask "spotify"
-cask "zed"
+cask "neovim"
+#cask "spotify"
 
 # VSCode Add-Ins
 vscode "golang.go"
 vscode "hashicorp.terraform"
-vscode "kennylong.kubernetes-yaml-formatter"
-vscode "mervin.markdown-formatter"
-vscode "ms-python.debugpy"
-vscode "ms-python.python"
-vscode "ms-python.vscode-pylance"
 vscode "ms-vscode.powershell"
-vscode "pspester.pester-test"
-vscode "redhat.ansible"
-vscode "foxundermoon.shell-format"
 
 # VSCode Themes
 vscode "catppuccin.catppuccin-vsc"
 
 # Install ansible and additional packages
-post_install() {
-  ./pipx_setup.sh
-}
+#post_install() {
+#  ./pipx_setup.sh
+#}
