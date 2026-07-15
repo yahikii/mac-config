@@ -1,3 +1,3 @@
 #!/bin/bash
-brew bundle --file=./Brewfile
-./pipx_setup.sh
+brew bundle --file=./brew/Brewfile
+. ./brew/pipx_setup.sh
